@@ -1,0 +1,387 @@
+.body {
+  width: 100vw;
+  background-image: linear-gradient(145deg, #66bfff, #99d4fd, #fff);
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #322c2c;
+}
+
+.navTextDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navText {
+  color: #fff;
+  font-family: "Marcellus", serif;
+  font-size: 2.5rem;
+  margin: 25px;
+  margin-left: 2rem;
+  cursor:default;
+}
+
+.navMenuWhole {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.navMenuLine {
+  width: 35px;
+  height: 7px;
+  background-color: #fff;
+}
+
+.navLcircle {
+  background-color: #fff;
+  width: 7px;
+  height: 7px;
+  border-radius: 10px 0 0 10px;
+}
+
+.navRcircle {
+  background-color: #fff;
+  width: 7px;
+  height: 7px;
+  border-radius: 0 10px 10px 0;
+}
+
+#options {
+  width: 15rem;
+  height: 20rem;
+  background-color: #fff;
+  position: absolute;
+  right: 20px;
+  border-radius: 5%;
+  box-shadow: #0000005b 5px 5px 20px -5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: inter;
+}
+
+.name {
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.hline {
+  width: 80%;
+  height: 1px;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn {
+  margin-top: 40px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover {
+  box-shadow: #0000005b 1px 1px 10px 2px;
+}
+
+#main {
+  margin-top: 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 100px 0;
+}
+
+.innerMain {
+  width: 70vw;
+}
+
+.innerHeading {
+  font-size: 1.6rem;
+}
+
+.innerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContentBox {
+  font-size: 1.2rem;
+  width: 60vw;
+  text-align: center;
+}
+
+.innerHeading,
+.innerContent {
+  font-family: inter;
+}
+
+#firstDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.innerDisplay {
+  width: 75vw;
+  background-color: #fff;
+  border-radius: 18px;
+  border: 3px solid;
+  display: flex;
+  justify-content: center;
+}
+
+.leftDisplay {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.middleDisplay {
+  width: 1px;
+  background-color: #322c2c;
+}
+
+.rightDisplay {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalDisplay {
+  margin: 25px;
+  padding: 5px 0;
+  font-size: 30px;
+  font-family: inter;
+}
+
+.totalDisplayExpense, .totalDisplayBudget {
+  margin: 25px;
+  padding: 5px 0;
+  font-size: 30px;
+  font-family: inter;
+}
+
+.totalDisplayExpense {
+  color: rgba(255, 0, 0, 0.843);
+}
+
+.totalDisplayBudget {
+  color: rgb(0, 173, 0);
+}
+
+.gray {
+  color: gray;
+}
+
+#income {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 250px;
+}
+
+.headIncome {
+  text-decoration: underline;
+  text-align: center;
+  font-family: inter;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.addIncome {
+  width: 75vw;
+  background-color: #fff;
+  border-radius: 18px;
+  border: 3px solid;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+}
+
+.bodyIncome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.incomeLeft {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.incomeRight {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.newIncome,
+.updateIncome {
+  width:27vw;
+  height: 75px;
+  background-color: #99d4fd;
+  border-radius: 8px;
+  border: 3px solid;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inter;
+}
+
+.newIncomeBtn {
+  background-color: rgb(242, 243, 255);
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.updateIncomeBtn {
+  background-color: rgb(242, 243, 255);
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.newIncomeText,
+.updateIncomeText {
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+.newIncomeBtn,
+.updateIncomeBtn {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
+
+.newIncomeBtn:hover,
+.updateIncomeBtn:hover {
+  cursor: pointer;
+  opacity: 90%;
+  transition: 0.2s;
+  box-shadow: 0 0 5px 1px #00000033;
+}
+
+.addExtend {
+  width: 75vw;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 18px;
+  border: 3px solid;
+  border-top: solid 1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding-bottom: 40px;
+}
+
+.addHead {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+@media (max-width: 450px) {
+  .navText {
+    font-size: 1.8rem;
+    margin: 20px;
+  }
+  .innerMain {
+    width: 80vw;
+  }
+  .innerContentBox {
+    width: 70vw;
+  }
+  #firstDisplay {
+    margin-bottom: 150px;
+  }
+  .innerDisplay {
+    flex-direction: column;
+  }
+  .totalDisplay, .totalDisplayExpense, .totalDisplayBudget {
+    font-size: 18px;
+  }
+  .middleDisplay {
+    width: 100%;
+    height: 1px;
+  }
+  .incomeLeft {
+    flex-direction: column;
+  }
+  .newIncome, .updateIncome {
+    width: 50vw;
+    height: 60px;
+    padding: 0;
+    margin: 10px;
+  }
+  .newIncomeText, .updateIncomeText {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  .newIncomeBtn, .updateIncomeBtn {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  .addExtend {
+    padding-bottom: 20px;
+  }
+  #options {
+    width: 12rem;
+    height: 16rem;
+  }
+  .name {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .hline {
+    border-top: solid 1px ;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .btn {
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 6px 15px;
+    cursor: pointer;
+    transition: .3s;
+  }
+}

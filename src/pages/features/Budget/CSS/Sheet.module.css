@@ -1,0 +1,165 @@
+.main {
+  position: fixed;
+  opacity: 0;
+  z-index: -100;
+  background-color: rgba(0, 0, 0, 0.599);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inter;
+}
+
+.cross {
+  position: relative;
+  top: 20px;
+  left: 140px;
+  width: 20px;
+  cursor: pointer;
+  opacity: 85%;
+}
+
+.change {
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.whole {
+  margin-bottom: 50px;
+  height: 510px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 7px solid;
+  outline: 2px solid #fff;
+}
+
+.formStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  margin: 30px 0 30px 0;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 2.3rem;
+}
+
+.amountBox,
+.descriptionBox,
+.dateBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.amount,
+.description,
+.date {
+  font-size: 1.1rem;
+  padding-left: 20px;
+  border: 2px solid;
+  border-radius: 4px;
+  outline: none;
+  width: 230px;
+  height: 45px;
+}
+
+.description {
+  width: 256px;
+}
+
+.date {
+  width: 256px;
+  font-size: 1rem;
+  padding-left: 0px;
+}
+
+.aLabelDiv,
+.dLabelDiv,
+.dateLabelDiv {
+  font-size: 1.25rem;
+  background-color: #fff;
+  position: relative;
+  top: 8px;
+  left: 9px;
+  margin-left: 2px;
+}
+
+.aLabelDiv {
+  width: 85px;
+}
+
+.dLabelDiv {
+  width: 117px;
+}
+
+.dateLabelDiv {
+  width: 55px;
+}
+
+.amountLabel,
+.descriptionLabel,
+.dateLabel {
+  margin-left: 5px;
+}
+
+.save {
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 85px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-style: inter;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.save:hover {
+  box-shadow: #0000005b 1px 1px 10px 2px;
+}
+
+.delete {
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 85px;
+  height: 40px;
+  background-color: #fff;
+  color: #000;
+  border: #000 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-style: inter;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.delete:hover {
+  box-shadow: #0000005b 1px 1px 10px 2px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.amount::-webkit-outer-spin-button,
+.amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+.amount[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 450px) {
+  .change {
+  }
+}

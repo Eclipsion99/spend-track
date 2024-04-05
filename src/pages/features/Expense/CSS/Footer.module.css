@@ -1,0 +1,49 @@
+.main {
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+    background-color: #1a1a1aed;
+    color: #dcdbdbcc;
+    font-family: inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoDiv {
+    display: flex;
+}
+
+.logo {
+    width: 30px;
+    margin: 15px;
+}
+
+.ln {
+    width: 35px;
+}
+
+.textDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin: 20px;
+}
+
+@media (max-width: 450px) {
+    .textDiv {
+        margin-left: 10px;
+    }
+    .text {
+        margin: 8px;
+        font-size: .8rem;
+        text-align: center;
+    }
+    .bottomText {
+        font-size: .8rem;
+    }
+}

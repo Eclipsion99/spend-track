@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+}
+
+.body {
+    background-color: #fff;
+    background-image: url('../Images/towfiqu-barbhuiya-xkArbdUcUeE-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -140px;
+    display: flex;
+    justify-content: center;
+}
+  
+.left, .right {
+    width: 50vw;
+}
+  
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    margin-bottom: 180px;
+}
+
+.heading {
+    margin-bottom: 0;
+    color: #fff;
+    font-family: 'Marcellus', serif;
+    font-size: 3rem;
+}
+
+.text {
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.bottom {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gStarted {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.4rem;
+    border: 1.5px solid;
+    border-radius: 6px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.gStarted:hover{
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+@media (max-width: 450px) {
+    .body {
+        background-position: -820px;
+        background-size: cover;
+        background-repeat:repeat;
+        align-items: flex-start;
+    }
+    .left {
+        display: none;
+    }
+    .right {
+        width: 80vw;
+    }
+    .heading, .text {
+        text-align: center;
+    }
+    .heading {
+        font-size: 2.5rem;
+    }
+    .text {
+        font-size: 1.44rem;
+    }
+}

@@ -1,0 +1,140 @@
+.main {
+    width: 90%;
+}
+
+.addHead {
+    font-family: inter;
+    font-weight: 500;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.content {
+    background-color: #fff;
+    border: 3px solid;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.amountBox, .descriptionBox, .dateBox {
+    height: 45px;
+    border: 1.5px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amountBox {
+    width: 25%;
+}
+
+.descriptionBox {
+    width: 35%;
+
+}
+
+.dateBox {
+    width: 25%;
+}
+
+.forImg {
+    border-right: 1px solid;
+    height: 100%;
+}
+
+.rupeeIcon {
+    width: 20px;
+    margin: 12px;
+}
+
+.amount, .description, .date {
+    border: none;
+    outline: none;
+    height: 90%;
+    font-size: 1rem;
+    font: inter;
+    width: 75%;
+}
+
+.amount {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    width: 60%;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+.date {
+    color: rgb(116, 116, 116);
+    width: 200px;
+}
+
+.submitBtn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #000;
+    border: 1.5px solid #000;
+    border-radius: 6px;
+    transition: 1s;
+}
+
+.submitBtn:hover {
+    box-shadow: #0000005b 1px 1px 10px 2px;
+    transition: 0.2s;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.amount::-webkit-outer-spin-button,
+.amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+.amount[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 450px) {
+    .addHead {
+        font-size: 1.6rem;
+    }
+    .forms {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .amountBox, .descriptionBox, .dateBox {
+        width: 90%;
+        margin: 5px;
+        height: 30px;
+    }
+    .rupeeIcon {
+        width: 15px;
+        margin: 8px;
+    }
+    .amount, .description {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .amount {
+        padding-left: 6px;
+    }
+    .submitBtn {
+        margin-top: 20px;
+    }
+}

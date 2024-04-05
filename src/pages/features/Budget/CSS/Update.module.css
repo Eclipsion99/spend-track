@@ -1,0 +1,236 @@
+.main {
+  width: 90%;
+  font-family: inter;
+}
+
+.addHead {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tableMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.trHead,
+.trBody {
+  display: flex;
+}
+
+.trHead {
+  margin-bottom: 1rem;
+}
+
+.bodyLeft {
+  display: flex;
+}
+
+.amountHeadDiv {
+  display: flex;
+  width: 12rem;
+  justify-content: center;
+  border: 2.5px solid transparent;
+  border-right: 0px solid transparent;
+}
+
+.descriptionHeadDiv {
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  border: 2.5px 0 solid transparent;
+}
+
+.dateHeadDiv {
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  border: 2.5px 0 solid transparent;
+  border-left: 1px solid transparent;
+}
+
+.updateHeadDiv {
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  border: 2.5px solid transparent;
+}
+
+.amountHead,
+.descriptionHead,
+.dateHead {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.amountBodyDiv {
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  border: 2.5px solid;
+  border-right: none;
+  margin: 5px 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.descriptionBodyDiv {
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  border: 2.5px solid;
+  border-right: none;
+  border-left: 1px solid;
+}
+
+.dateBodyDiv {
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  border: 2.5px solid;
+  border-left: 1px solid;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.updateBodyDiv {
+  width: 8rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 5px;
+}
+
+.amountBody,
+.descriptionBody,
+.dateBody {
+  font-family: inter;
+  font-size: 1.4rem;
+  margin: 12px;
+}
+
+.editBtn {
+  font-family: inter;
+  font-size: 1.5rem;
+  font-weight: 300;
+  background-color: #000;
+  border: 0px solid;
+  border-radius: 6px;
+  padding: 6px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.editBtn:hover {
+  box-shadow: #0000005b 1px 1px 10px 2px;
+  transition: 0.2s;
+}
+
+.change {
+  display: none;
+}
+
+.fadeIn {
+    display: flex;
+    animation: fadeIn 1s
+
+}
+
+.fadeOut {
+    display: none;
+}
+
+.aniBtn {
+    background: transparent;
+    border: none;
+}
+
+.arrow {
+    width: 50px;
+    cursor: pointer;
+}
+
+.reverse {
+    transform: rotate(180deg);
+}
+
+.vis {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+         opacity: 0;
+         transform: scale(0)
+    }
+
+    100% {
+         opacity: 1;
+         transform: scale(1)
+    }
+}
+
+@media (max-width: 450px) {
+
+  .addHead {
+    font-size: 1.6rem;
+  }
+  .trBody {
+    margin-bottom: 10px;
+  }
+  .amountHeadDiv, .descriptionHeadDiv, .dateHeadDiv, .updateHeadDiv {
+    border: none;
+  }
+  .amountBodyDiv, .descriptionBodyDiv, .dateBodyDiv, .updateBodyDiv {
+    margin: 0;
+  }
+  .amountHeadDiv, .amountBodyDiv {
+    width: 12vw;
+    height: 15px;
+  }
+  .descriptionHeadDiv, .descriptionBodyDiv {
+    width: 18vw;
+    height: 15px;
+  }
+  .dateHeadDiv, .dateBodyDiv {
+    width: 25vw;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .updateHeadDiv, .updateBodyDiv {
+    margin-left: 10px;
+    width: 8vw;
+  }
+  .amountHead, .descriptionHead, .dateHead {
+    font-size: .7rem;
+    margin: 0;
+  }
+  .amountBody, .descriptionBody, .dateBody {
+    font-size: .7rem;
+    margin: 0;
+  }
+  .dateBody {
+    font-size: .5rem;
+  }
+  .editBtn {
+    font-size: .7rem;
+    border-radius: 3px;
+    padding: 3px 5px;
+    margin: 0;
+  }
+  .arrow {
+    width: 30px;
+  }
+}
