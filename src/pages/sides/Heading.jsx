@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/Users/mainak/Desktop/Expense Tracker/my-app/src/styles/Homepage.module.css";
+import styles from "../../styles/Homepage.module.css";
 
 const Heading = () => {
   return (
