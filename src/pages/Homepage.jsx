@@ -56,7 +56,6 @@ const Homepage = ({ token }) => {
   async function handleSubmit() {
     await supabase.from("Trail").insert({ name: user.name, age: user.age });
     setUsers(data);
-    // fetchUsers();
   }
 
   return (

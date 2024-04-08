@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import styles from "/Users/mainak/Desktop/Expense Tracker/my-app/src/pages/features/Budget/CSS/Add.module.css";
 import { supabase } from "/Users/mainak/Desktop/Expense Tracker/my-app/src/client.js";
 import rupee from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/rupee-indian.png";
-import pencil from  "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/pencil.png";
+import pencil from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/pencil.png";
 
 const Add = (props) => {
-
   const [z, setZ] = useState(true);
   const [users, setUsers] = useState([]);
   const [newBudget, setBudget] = useState({
@@ -32,13 +31,19 @@ const Add = (props) => {
     setUsers(data);
   }
 
-  
-  async function handleSubmit() {
-      await supabase.from("budgets").insert({ email: props.token.user.email, amount: newBudget.amount, description: newBudget.description, datetime: newBudget.datetime });
-      console.log(props.token.user.email, newBudget.amount, newBudget.description, newBudget.datetime);
-      alert("Budget added")
-      window.location.reload();
-  }
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    await supabase.from("budgets").insert({
+        email: props.token.user.email,
+        amount: newBudget.amount,
+        description: newBudget.description,
+        datetime: newBudget.datetime
+    });
+
+    alert("Budget added");
+    window.location.href = '/Homepage';
+}
 
   return (
     <div className={styles.main}>
@@ -47,7 +52,7 @@ const Add = (props) => {
         <form className={styles.forms} onSubmit={handleSubmit}>
           <div className={styles.amountBox}>
             <div className={styles.forImg}>
-              <img src={rupee} alt="rupee" className={styles.rupeeIcon}/>
+              <img src={rupee} alt="rupee" className={styles.rupeeIcon} />
             </div>
             <input
               type="number"
@@ -59,10 +64,24 @@ const Add = (props) => {
           </div>
           <div className={styles.descriptionBox}>
             <div className={styles.forImg}>
-              <img src={pencil} alt="pencil" className={styles.rupeeIcon}/>
+              <img src={pencil} alt="pencil" className={styles.rupeeIcon} />
             </div>
-            <select id={styles.mySelect} name="description" className={styles.description} onChange={handleChange} >
-              <option value="" disabled selected={z ? true : false} onClick={() => {setZ((data) => !data)}}>Category</option>
+            <select
+              id={styles.mySelect}
+              name="description"
+              className={styles.description}
+              onChange={handleChange}
+            >
+              <option
+                value=""
+                disabled
+                selected={z ? true : false}
+                onClick={() => {
+                  setZ((data) => !data);
+                }}
+              >
+                Category
+              </option>
               <option value="Salary">Salary</option>
               <option value="Gifts">Gifts</option>
               <option value="Sales">Sales</option>
@@ -80,7 +99,9 @@ const Add = (props) => {
               onChange={handleChange}
             />
           </div>
-          <button className={styles.submitBtn} type="submit">Submit</button>
+          <button className={styles.submitBtn} type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </div>

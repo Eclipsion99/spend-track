@@ -26,10 +26,9 @@ function App() {
       <div>
       <Routes>
         <Route path='/' element={<Landing/>}/>
-        <Route path='Signup' element={<SignUp/>}/>
-        <Route path='Login' element={<Login setToken={setToken}/>}/>
-        {token?<Route path='Homepage' element={<Homepage token={token}/>}/>:""}
-        {/* <Route path='Homepage' element={<Homepage token={token}/>}/> */}
+        <Route path='/Signup' element={<SignUp/>}/>
+        <Route path='/Login' element={<Login setToken={setToken}/>}/>
+        {token?<Route path='/Homepage' element={<Homepage token={token}/>}/>:""}
         <Route path='*' element={<NoMatch/>}/>
       </Routes>
     </div>
@@ -37,3 +36,5 @@ function App() {
 }
 
 export default App
+
+// import {Routes, Route} from 'react-router-dom'

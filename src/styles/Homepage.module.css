@@ -315,6 +315,11 @@
   text-decoration: underline;
 }
 
+.updateExpense {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 450px) {
   .navText {
     font-size: 1.8rem;

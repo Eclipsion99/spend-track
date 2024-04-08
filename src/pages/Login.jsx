@@ -14,8 +14,6 @@ function Login({ setToken }) {
     password: "123456",
   });
 
-  console.log(formData);
-
   function handleChange(event) {
     setFormData((prevFormData) => {
       return {

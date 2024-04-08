@@ -13,8 +13,6 @@ const Sheet = ({ token, toggle, setTest, id, setId }) => {
     date: "",
   });
 
-  // console.log(users);
-
   useEffect(() => {
     setTable(id[1] ? "budgets" : "expenses");
   }, [id]);
@@ -72,11 +70,13 @@ const Sheet = ({ token, toggle, setTest, id, setId }) => {
     } else {
       console.log("User updated successfully:", data);
       setTest((data) => !data);
-      window.location.reload();
+      window.location.href = '/Homepage';
+
     }
   }
 
-  async function handleDelete() {
+  async function handleDelete(event) {
+    event.preventDefault();
     const { error } = await supabase.from(table).delete().eq("id", id[0]);
 
     if (error) {
@@ -89,7 +89,8 @@ const Sheet = ({ token, toggle, setTest, id, setId }) => {
         date: "",
       });
       setTest((data) => !data);
-      window.location.reload();
+      window.location.href = '/Homepage';
+
     }
   }
 

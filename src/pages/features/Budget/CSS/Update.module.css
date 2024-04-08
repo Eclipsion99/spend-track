@@ -1,6 +1,9 @@
 .main {
   width: 90%;
   font-family: inter;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .addHead {
