@@ -43,7 +43,6 @@ const AddExpense = (token) => {
         datetime: newBudget.datetime,
       });
     alert("Budget added");
-    window.location.href = 'https://spend-track.vercel.app/Homepage';
 
   }
 
