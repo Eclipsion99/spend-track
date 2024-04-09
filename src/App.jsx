@@ -10,7 +10,6 @@ function App() {
   const [token, setToken] = useState(null);
 
   useEffect(() => {
-    // Retrieve the token from session storage on initial load
     const storedToken = sessionStorage.getItem('token');
     if (storedToken) {
       setToken(JSON.parse(storedToken));
@@ -18,7 +17,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Save the token to session storage whenever it changes
     if (token) {
       sessionStorage.setItem('token', JSON.stringify(token));
     }
