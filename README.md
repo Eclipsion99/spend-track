@@ -8,8 +8,8 @@ Efficient Management: Categorize transactions and monitor spending habits.
 Responsive Design: Enjoy a consistent experience across devices.
 
 <h2>Technologies Used</h2>
-Frontend: HTML, CSS, Javascript, React, Vite
-Backend: Supabase
+Frontend: HTML, CSS, Javascript, React, Vite<br>
+Backend: Supabase<br>
 Visualization: Chart.js (for visualizing expense data)
 
 Deployment
