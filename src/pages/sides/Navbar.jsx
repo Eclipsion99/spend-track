@@ -31,7 +31,6 @@ const Navbar = ({token}) => {
   }
 
   const name = user.length > 0 ? user[0].full_name.split(" ")[0] : '';
-  console.log(name);
 
   const [menuShow, setMenuShow] = useState(false);
 

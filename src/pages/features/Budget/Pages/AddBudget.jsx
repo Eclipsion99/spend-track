@@ -42,6 +42,7 @@ const Add = (props) => {
     });
 
     alert("Budget added");
+    window.location.href = '/Homepage';
 }
 
   return (

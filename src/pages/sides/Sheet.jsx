@@ -70,6 +70,7 @@ const Sheet = ({ token, toggle, setTest, id, setId }) => {
     } else {
       console.log("User updated successfully:", data);
       setTest((data) => !data);
+      window.location.href = '/Homepage';
 
     }
   }
@@ -88,6 +89,7 @@ const Sheet = ({ token, toggle, setTest, id, setId }) => {
         date: "",
       });
       setTest((data) => !data);
+      window.location.href = '/Homepage';
 
     }
   }
