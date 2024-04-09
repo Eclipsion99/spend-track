@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { supabase } from "../../client";
-import styles from "/Users/mainak/Desktop/Expense Tracker/my-app/src/pages/features/Budget/CSS/Sheet.module.css";
-import cross from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/close.png";
+import styles from "../../pages/features/Budget/CSS/Sheet.module.css";
+import cross from "../../Images/close.png";
 
 const Sheet = ({ token, toggle, setTest, id, setId }) => {
   const [users, setUsers] = useState([]);

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import styles from "/Users/mainak/Desktop/Expense Tracker/my-app/src/pages/features/Expense/CSS/UpdateExpense.module.css"
-import arrow from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/down-arrow.png";
+import styles from "../CSS/UpdateExpense.module.css"
+import arrow from "../../../../Images/down-arrow.png";
 import { supabase } from '../../../../client';
 
 const UpdateExpense = ({ token, toggle, setTest, id, setId }) => {

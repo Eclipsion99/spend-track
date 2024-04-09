@@ -3,10 +3,10 @@ import { supabase } from "../../client.js";
 import AddExpense from "../features/Expense/Pages/AddExpense.jsx";
 import UpdateExpense from "../features/Expense/Pages/UpdateExpense.jsx";
 import TrackExpense from "../features/Expense/Pages/TrackExpense.jsx";
-import styles from "/Users/mainak/Desktop/Expense Tracker/my-app/src/pages/features/Expense/CSS/Transactions.module.css";
-import dollar from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/Untitled design (1).png";
-import piggy from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/Untitled design.png";
-import graph from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/Untitled design (2).png";
+import styles from "../features/Expense/CSS/Transactions.module.css";
+import dollar from "../../Images/Untitled design (1).png";
+import piggy from "../../Images/Untitled design.png";
+import graph from "../../Images/Untitled design (2).png";
 
 const Transactions = ({ token, toggle, setTest, id, setId }) => {
   const [users, setUsers] = useState([]);

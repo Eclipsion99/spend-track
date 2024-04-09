@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from "/Users/mainak/Desktop/Expense Tracker/my-app/src/pages/features/Expense/CSS/Footer.module.css"
-import fb from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/ri--facebook-fill.svg"
-import insta from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/fa6-brands--instagram.svg"
-import twitter from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/pajamas--twitter.svg"
-import linkedin from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/ant-design--linkedin-outlined.svg"
+import styles from "../features/Expense/CSS/Footer.module.css"
+import fb from "../../Images/ri--facebook-fill.svg"
+import insta from "../../Images/fa6-brands--instagram.svg"
+import twitter from "../../Images/pajamas--twitter.svg"
+import linkedin from "../../Images/ant-design--linkedin-outlined.svg"
 
 const Footer = () => {
   return (

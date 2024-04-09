@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "../CSS/Update.module.css";
 import { supabase } from "../../../../client";
-import arrow from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/down-arrow.png";
+import arrow from "../../../../Images/down-arrow.png";
 
 const Update = ({ token, toggle, setTest, id, setId }) => {
 

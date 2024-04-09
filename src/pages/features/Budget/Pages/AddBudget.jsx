@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import styles from "/Users/mainak/Desktop/Expense Tracker/my-app/src/pages/features/Budget/CSS/Add.module.css";
-import { supabase } from "/Users/mainak/Desktop/Expense Tracker/my-app/src/client.js";
-import rupee from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/rupee-indian.png";
-import pencil from "/Users/mainak/Desktop/Expense Tracker/my-app/src/Images/pencil.png";
+import styles from "../CSS/Add.module.css";
+import { supabase } from "../../../../client.js";
+import rupee from "../../../../Images/rupee-indian.png";
+import pencil from "../../../../Images/pencil.png";
 
 const Add = (props) => {
   const [z, setZ] = useState(true);

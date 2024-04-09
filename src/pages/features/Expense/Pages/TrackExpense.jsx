@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "/Users/mainak/Desktop/Expense Tracker/my-app/src/pages/features/Expense/CSS/TrackExpense.module.css";
+import styles from "../CSS/TrackExpense.module.css";
 import PieChart from "./PieChart.jsx";
 import BarGraph from "./BarGraph.jsx";
 import { supabase } from "../../../../client";

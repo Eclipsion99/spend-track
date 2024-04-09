@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import styles from "/Users/mainak/Desktop/Expense Tracker/my-app/src/styles/Homepage.module.css";
+import styles from "../../styles/Homepage.module.css";
 import Add from "../features/Budget/Pages/AddBudget.jsx";
 import Update from "../features/Budget/Pages/UpdateBudget.jsx";
 import { supabase } from "../../client.js";

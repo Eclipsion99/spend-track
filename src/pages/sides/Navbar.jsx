@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import styles from "/Users/mainak/Desktop/Expense Tracker/my-app/src/styles/Homepage.module.css";
+import styles from "../../styles/Homepage.module.css";
 import { supabase } from "../../client";
 import { useNavigate } from "react-router-dom";
 
