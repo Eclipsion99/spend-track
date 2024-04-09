@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import SignUp from './pages/Signup';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
@@ -8,27 +8,21 @@ import NoMatch from './pages/NoMatch';
 
 function App() {
   const [token, setToken] = useState(null);
-  const [isTokenChecked, setIsTokenChecked] = useState(false);
 
   useEffect(() => {
+    // Retrieve the token from session storage on initial load
     const storedToken = sessionStorage.getItem('token');
     if (storedToken) {
       setToken(JSON.parse(storedToken));
     }
-    setIsTokenChecked(true); 
   }, []);
 
-  const ProtectedRoute = ({ children }) => {
-    if (!isTokenChecked) {
-      return null;
+  useEffect(() => {
+    // Save the token to session storage whenever it changes
+    if (token) {
+      sessionStorage.setItem('token', JSON.stringify(token));
     }
-
-    if (!token) {
-      return <Navigate to="/Login" replace />;
-    }
-
-    return children; 
-  };
+  }, [token]);
 
   return (
     <div>
@@ -36,11 +30,7 @@ function App() {
         <Route path='/' element={<Landing />} />
         <Route path='/Signup' element={<SignUp />} />
         <Route path='/Login' element={<Login setToken={setToken} />} />
-        <Route path='/Homepage' element={
-          <ProtectedRoute>
-            <Homepage token={token} />
-          </ProtectedRoute>
-        } />
+        {token && <Route path='/Homepage' element={<Homepage token={token} />} />}
         <Route path='*' element={<NoMatch />} />
       </Routes>
     </div>
