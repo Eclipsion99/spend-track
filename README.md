@@ -17,3 +17,5 @@ Deploy Spend Track to hosting platform Vercel.
 
 Acknowledgements
 Inspired by the need for a straightforward expense tracking solution.
+
+Mainak
