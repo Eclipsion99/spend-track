@@ -9,9 +9,9 @@ import mainImg from "../Images/cash-flow.png";
 
 function SignUp() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    password: "",
+    name: "Mainak",
+    email: "chatterjeemainak2003@gmail.com",
+    password: "123456",
   });
 
   function handleChange(event) {
