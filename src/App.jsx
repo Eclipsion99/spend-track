@@ -7,7 +7,7 @@ import Homepage from './pages/Homepage';
 import NoMatch from './pages/NoMatch';
 
 function App() {
-  const [token, setToken] = useState('d3384f6c-e94c-4685-899f-209ec73ca62d');
+  const [token, setToken] = useState(null);
 
   useEffect(() => {
     const storedToken = sessionStorage.getItem('token');
