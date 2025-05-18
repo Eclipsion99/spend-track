@@ -26,19 +26,19 @@ function Login({ setToken }) {
   async function handleSubmit(event) {
     event.preventDefault();
 
-    try {
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email: formData.email,
-        password: formData.password,
-      });
+    // try {
+    //   const { data, error } = await supabase.auth.signInWithPassword({
+    //     email: formData.email,
+    //     password: formData.password,
+    //   });
 
-      if (error) throw error;
+    //   if (error) throw error;
       navigate("/Homepage");
-      setToken(data);
-    } catch (error) {
-      alert(error.message || "Login failed");
-    }
-    console.log("Data => ", data);
+    //   setToken(data);
+    // } catch (error) {
+    //   alert(error.message || "Login failed");
+    // }
+    // console.log("Data => ", data);
   }
 
   return (
